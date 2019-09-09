@@ -1,6 +1,6 @@
 # LenovoBatteryLinux
 
-Battery Management for Ideapads (tested on Lenovo G570) Ubuntu 19.04
+Battery Management for Ideapads (tested on Lenovo G570 Ubuntu 19.04)
 
 Install acpi call kernel module
 
