@@ -13,6 +13,7 @@ Configure battery charge level (charge thresholds)
 Additional Parameters:
 
 1 — Start battery calibration
+
 0 — Stop battery calibration. You need to connect to the network and call SBMC 1, after that the battery will fully charge, then it will completely discharge, then the calibration will end, and the battery will recharge
 
 Sources: [1](https://www.linux.org.ru/forum/general/10574293?cid=11356142), [2](https://github.com/Sudokamikaze/LenovoBatteryLinux)
