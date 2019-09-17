@@ -1,4 +1,4 @@
-# Lenovo power management on Linux
+# Lenovo power management for Linux
 
 Battery Management for Ideapads (tested on Lenovo G570 Ubuntu 19.04)
 
