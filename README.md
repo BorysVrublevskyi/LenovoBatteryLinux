@@ -8,11 +8,11 @@ Battery Management for Ideapads (tested on Lenovo G570 Ubuntu 19.04)
 
 * OpenSUEE: download and run (doubleclick) .yml file from here [The acpi-call kernel module](https://software.opensuse.org/package/acpi_call)
 
-Run script to configure battery charge level (charge thresholds):
+## Run script
 
 `./battery_management.sh`
 
-Chose option in menu:
+## Chose option in menu:
 
 1. Enable battery protection mode (Charge level about 55~59%)
 
@@ -21,8 +21,7 @@ Chose option in menu:
 3. Charge battery to 50% and exit
 
 
-
-Additional acpi-call parameters:
+## Additional acpi-call parameters:
 
 1 — Start battery calibration
 
