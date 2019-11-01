@@ -2,11 +2,11 @@
 
 Battery Management for Ideapads (tested on Lenovo G570 Ubuntu 19.04)
 
-Install acpi call kernel module
+## Install acpi call kernel module
 
-Debian/Ubuntu: `sudo apt install acpi-call-dkms`
+* Debian/Ubuntu: `sudo apt install acpi-call-dkms`
 
-OpenSUEE: download and run (doubleclick) .yml file from here [The acpi-call kernel module](https://software.opensuse.org/package/acpi_call)
+* OpenSUEE: download and run (doubleclick) .yml file from here [The acpi-call kernel module](https://software.opensuse.org/package/acpi_call)
 
 Run script to configure battery charge level (charge thresholds):
 
