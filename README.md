@@ -2,31 +2,45 @@
 
 Battery Management for Lenovo Ideapads (tested on Lenovo G570: Ubuntu 19.04, Fedora 31)
 
-## Install acpi call kernel module
+## Install acpi_call kernel module
 
 * Debian/Ubuntu: `sudo apt install acpi-call-dkms`
 
 * Fedora : `sudo dnf install acpi_call`
 
-* OpenSUEE: download and run (doubleclick) .yml file from here [The acpi-call kernel module](https://software.opensuse.org/package/acpi_call)
+* OpenSUEE: download and run (doubleclick) .yml file from: [the acpi-call kernel module page](https://software.opensuse.org/package/acpi_call)
 
-## Run script
+## Using
 
-`./battery_management.sh`
+download this script:
 
-## Chose option in menu:
+`wget https://github.com/BorysVrublevskyi/LenovoPowerManagementLinux/raw/master/battery_management.sh`
 
-1. Enable battery protection mode (Charge level about 55~59%)
+Allow system to run it:
 
-2. Disable battery protection mode (Charge level 100%)
+`chown +x battery_management.sh`
 
-3. Charge battery to 50% and exit
+Run it:
 
+`sudo ./battery_management.sh`
 
-## Additional acpi-call parameters:
+Avalaible options:
 
-1 — Start battery calibration. Connect to power supply and call SBMC 1, after that the battery will fully charge, then it will completely discharge, then the calibration will end, and the battery will recharge.
+1. Enable "Battery Protection Mode" (Charge level about 50~70% depending of laptop model).
+Select this when You working on AC power to protect battery from degradation.
 
-0 — Stop battery calibration.
+2. Enable "Battery Fully Charged Mode" (Charge level 100%).
+Select this when You going to work from battery power.
+
+3. Start Battery Calibration. WARNING! This may damage your battery!
+Laptop must be conected to the power supply!
+Battery will fully charge, then it will completely discharge.
+Then the calibration will end, and the battery will recharge.
+
+4. Stop Battery Calibration. WARNING! This may damage your battery!
+
+## Disclaimer
+
+Read the menu items carefully. You are solely responsible for the results of your actions.
 
 Sources: [1](https://www.linux.org.ru/forum/general/10574293?cid=11356142), [2](https://github.com/Sudokamikaze/LenovoBatteryLinux)
