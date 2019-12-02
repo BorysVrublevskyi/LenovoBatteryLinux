@@ -6,7 +6,13 @@ Battery Management for Lenovo Ideapads (tested on Lenovo G570: Ubuntu 19.04, Fed
 
 * Debian/Ubuntu: `sudo apt install acpi-call-dkms`
 
-* Fedora : `sudo dnf install acpi_call`
+* Fedora:
+
+    ```
+    sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+    sudo dnf install http://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm
+    sudo dnf install acpi_call
+    ```
 
 * OpenSUEE: download and run (doubleclick) .yml file from: [the acpi-call kernel module page](https://software.opensuse.org/package/acpi_call)
 
